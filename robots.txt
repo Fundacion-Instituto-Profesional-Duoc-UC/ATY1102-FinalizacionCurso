@@ -1,0 +1,11 @@
+# Configuración para el sitio de ATY1102 RPA
+User-agent: *
+Disallow: /evaluaciones/
+Disallow: /certificados-privados/
+Allow: /index.html
+Allow: /style.css
+Allow: /script.js
+
+# Permitir a los bots académicos indexar el contenido educativo
+User-agent: EduBot
+Allow: /
