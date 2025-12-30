@@ -1,0 +1,66 @@
+/* Estilos generales del cuerpo */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Estilos para el encabezado Jumbotron */
+.jumbotron {
+    background: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d); /* Gradiente más dinámico para cierre de curso */
+    border-radius: 0;
+}
+
+.jumbotron h1 {
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Estilos para las tarjetas de contenido */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+.card-title {
+    color: #1a2a6c;
+    font-weight: bold;
+}
+
+/* Diseño del encabezado */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-duoc {
+    max-width: 180px;
+    height: auto;
+    filter: brightness(0) invert(1); /* Hace el logo blanco para resaltar en el fondo oscuro */
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
